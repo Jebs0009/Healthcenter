@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HealthCenter.Client.props" />
+</Project>

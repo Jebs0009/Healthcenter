@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-HealthCenter-e1ccd2db-bab5-404a-92ab-013a1dbe2b4a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCenter.Client\HealthCenter.Client.csproj" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13" />
+  </ItemGroup>
+
+</Project>

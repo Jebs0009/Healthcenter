@@ -1,0 +1,32 @@
+﻿@page "/addsystemcode"
+@using HealthCenter.Models
+<PageTitle>New System code </PageTitle>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="row">
+			<h3>Add a New System Code</h3>
+			<div class="form-group col-md-12">
+				<label for="systemCode" >Code</label>
+				<InputText for="Code" @bind-Value="@systemCode.Code" class="form-control" />
+				<ValidationMessage For="@(() => systemCode.Code)" />
+			</div>
+			<div class="form-group col-md-12">
+				<label for="description">Name</label>
+				<InputText @bind-Value="@systemCode.Description" class="form-control"/>
+				<ValidationMessage For="@(() => systemCode.Description)" />
+			</div>
+			<div class="form-group col-md-12">
+				<label for="orderNum">Number Of Order</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+@code {
+	public SystemCode systemCode { get; set; } = new();
+
+
+	
+}

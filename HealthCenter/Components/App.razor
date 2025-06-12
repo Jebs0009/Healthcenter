@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="HealthCenter.styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet />
+</head>
+
+<body>
+    <Routes/>
+    <script src="_framework/blazor.web.js"></script>
+    @inject NavigationManager Navigation
+    @inject IJSRuntime JS
+    @implements IDisposable
+
+    @code {
+        private Timer _inactivityTimer;
+        private readonly TimeSpan _inactivityLimit = TimeSpan.FromMinutes(10);
+
+        protected override void OnAfterRender(bool firstRender)
+        {
+            if (firstRender)
+            {
+                JS.InvokeVoidAsync("addInactivityEvents");
+                ResetTimer();
+            }
+        }
+
+        private void ResetTimer()
+        {
+            _inactivityTimer?.Dispose();
+            _inactivityTimer = new Timer(LogoutUser, null, _inactivityLimit, Timeout.InfiniteTimeSpan);
+        }
+
+        private void LogoutUser(object state)
+        {
+            InvokeAsync(() =>
+            {
+                Navigation.NavigateTo("Identity/Account/Logout", true);
+            });
+        }
+
+        public void Dispose()
+        {
+            _inactivityTimer?.Dispose();
+        }
+    }
+</body>
+
+</html>
+

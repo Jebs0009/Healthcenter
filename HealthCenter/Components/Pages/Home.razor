@@ -1,0 +1,14 @@
+﻿@attribute [Authorize]
+<AuthorizeView>
+@page "/"
+@using Microsoft.AspNetCore.Authorization
+
+@rendermode InteractiveAuto
+
+<PageTitle>Home</PageTitle>
+
+<h1>WELCOME</h1>
+
+
+    Hello @context.User.Identity?.Name!
+</AuthorizeView>

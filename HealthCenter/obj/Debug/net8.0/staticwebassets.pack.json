@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JEBS\\source\\repos\\HealthCenter\\HealthCenter\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthCenter.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HealthCenter.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\JEBS\\source\\repos\\HealthCenter\\HealthCenter\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\JEBS\\source\\repos\\HealthCenter\\HealthCenter\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JEBS\\source\\repos\\HealthCenter\\HealthCenter\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JEBS\\source\\repos\\HealthCenter\\HealthCenter\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HealthCenter.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HealthCenter.props",
+      "PackagePath": "build\\HealthCenter.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HealthCenter.props",
+      "PackagePath": "buildMultiTargeting\\HealthCenter.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HealthCenter.props",
+      "PackagePath": "buildTransitive\\HealthCenter.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
